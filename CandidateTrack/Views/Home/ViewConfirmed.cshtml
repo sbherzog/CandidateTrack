@@ -1,0 +1,38 @@
+﻿@using CandidateTrack.Data;
+@{
+    ViewBag.Title = "ViewConfirmed";
+}
+
+<h2>@Model.type</h2>
+
+<button class="btn btn-success btn-toggle" style="margin:20px 0px;">Toggle Notes</button>
+
+<table class="table table-condensed table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th class="note-toggle">Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CandidateDB c in Model.candidate)
+        {
+            <tr>
+                 <td>@c.FirstName</td>
+                 <td>@c.LastName</td>
+                 <td>@c.PhoneNumber</td>
+                 <td>@c.Email</td>
+                 <td class="note-toggle">@c.comment</td>
+             </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+<script src="/Scripts/viewCandidate.js"></script>
+}
+

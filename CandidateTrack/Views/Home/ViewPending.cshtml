@@ -1,0 +1,29 @@
+﻿@using CandidateTrack.Data;
+@{
+    ViewBag.Title = "ViewPending";
+}
+
+<div class="col-md-6 col-md-offset-3" style="font-size:20px;">
+    @foreach (CandidateDB c in Model.candidate)
+    {
+        <div class="well">
+            <div>Name: <strong>@c.FirstName @c.LastName</strong></div>
+            <div>Email: <strong>@c.Email</strong></div>
+            <div>Phone: <strong>@c.PhoneNumber</strong></div>
+            <div>Status: <strong>Pending</strong></div>
+            <div>
+                Notes:<br />
+                <strong style="font-size:12px">@c.comment</strong>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-primary action" data-action="true" data-id="@c.id">Confirm</button>
+                <button class="btn btn-danger action" data-action="false" data-id="@c.id">Refuse</button>
+            </div>
+        </div>
+    }
+</div>
+
+@section scripts
+{
+<script src="/Scripts/viewPending.js"></script>
+}

@@ -1,0 +1,6 @@
+\\psf\home\documents\visual studio 2015\Projects\CandidateTrack\CandidateTrack.Data\bin\Debug\CandidateTrack.Data.dll.config
+\\psf\home\documents\visual studio 2015\Projects\CandidateTrack\CandidateTrack.Data\bin\Debug\CandidateTrack.Data.dll
+\\psf\home\documents\visual studio 2015\Projects\CandidateTrack\CandidateTrack.Data\bin\Debug\CandidateTrack.Data.pdb
+\\psf\home\documents\visual studio 2015\Projects\CandidateTrack\CandidateTrack.Data\obj\Debug\CandidateTrack.Data.dll
+\\psf\home\documents\visual studio 2015\Projects\CandidateTrack\CandidateTrack.Data\obj\Debug\CandidateTrack.Data.pdb
+\\psf\home\documents\visual studio 2015\Projects\CandidateTrack\CandidateTrack.Data\obj\Debug\CandidateTrack.Data.csprojResolveAssemblyReference.cache
